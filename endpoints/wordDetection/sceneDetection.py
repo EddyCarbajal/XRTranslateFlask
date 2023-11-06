@@ -1,0 +1,1 @@
+labels = ['word', 'phrase', 'sentence', 'paragraph']

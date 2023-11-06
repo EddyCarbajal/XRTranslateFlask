@@ -1,0 +1,26 @@
+<annotation>
+	<folder>words</folder>
+	<filename>word7.jpg</filename>
+	<path>/Users/ethansmith/Desktop/Capstone/XRTranslate/XRTranslateFlask/endpoints/wordDetection/dataset/collected_images/words/word7.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1440</width>
+		<height>960</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>word</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>746</xmin>
+			<ymin>169</ymin>
+			<xmax>880</xmax>
+			<ymax>224</ymax>
+		</bndbox>
+	</object>
+</annotation>
