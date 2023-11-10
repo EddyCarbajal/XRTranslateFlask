@@ -10,6 +10,10 @@ api = Api(app)
 cors = CORS(app, resources ={r'/*': {'origins': '*'}})
 
 
+class Home(Resource):
+    def hello_world():
+        return "hello world!"
+
 class OCR(Resource):
     def post(self):
         # Check if the request contains a file
@@ -39,6 +43,7 @@ class Translator(Resource):
         
 
 
+api.add_resource(Home, "/")
 
 api.add_resource(OCR, '/ocr')
 
