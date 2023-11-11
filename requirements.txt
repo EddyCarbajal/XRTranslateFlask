@@ -32,7 +32,7 @@ numpy==1.22.4
 openpyxl==3.0.10
 packaging==23.2
 pandas==1.4.3
-pexpecjnht==4.8.0
+pexpect==4.8.0
 Pillow==10.1.0
 pipenv==2022.6.7
 pipreqs==0.4.13
