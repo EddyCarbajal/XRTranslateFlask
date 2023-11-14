@@ -1,7 +1,7 @@
 # # app.py
-# import os
-# from flask import Flask, request, jsonify, Blueprint
-# from PIL import Image
+import os
+from flask import Flask, request, jsonify, Blueprint
+from PIL import Image
 # import torch
 # import torchvision.transforms as transforms
 import pytesseract
