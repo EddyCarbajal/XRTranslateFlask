@@ -4,7 +4,7 @@
 # from PIL import Image
 # import torch
 # import torchvision.transforms as transforms
-# import pytesseract
+import pytesseract
 
 
 # def ocr(file):
