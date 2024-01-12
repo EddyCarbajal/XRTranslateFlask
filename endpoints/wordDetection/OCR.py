@@ -26,6 +26,7 @@ def ocr(file):
 
             # Perform OCR using pytesseract
             pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract.exe'
+            #pllsss
             # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
             text = pytesseract.image_to_string(img)
 
