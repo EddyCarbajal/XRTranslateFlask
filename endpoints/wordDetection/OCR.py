@@ -16,7 +16,7 @@ def ocr(file):
 
     # Check if the file is a JPEG
     if file and file.filename.endswith(('.jpeg', '.jpg', '.png')):
-        # try:
+        try:
             # Save the uploaded image temporarily
             image_path = "temp.jpg"
             file.save(image_path)
@@ -35,7 +35,7 @@ def ocr(file):
             os.remove(image_path)
 
             return text
-        # except Exception as e:
-            # return 500 #jsonify({"error": str(e)}), 500
+        except Exception as e:
+            return 500 #jsonify({"error": str(e)}), 500
     else:
         return 400 #jsonify({"error": "Invalid file format. Please upload a JPEG image."}), 400
