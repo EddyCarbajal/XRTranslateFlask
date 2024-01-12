@@ -36,6 +36,6 @@ def ocr(file):
 
             return text
         except Exception as e:
-            return jsonify({"error": str(e)}), 500
+            return 500 #jsonify({"error": str(e)}), 500
     else:
-        return jsonify({"error": "Invalid file format. Please upload a JPEG image."}), 400
+        return 400 #jsonify({"error": "Invalid file format. Please upload a JPEG image."}), 400
