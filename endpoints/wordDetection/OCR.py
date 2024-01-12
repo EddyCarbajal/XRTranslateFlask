@@ -25,7 +25,8 @@ def ocr(file):
             img = Image.open(image_path)
 
             # Perform OCR using pytesseract
-            pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+            pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
+            # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
             text = pytesseract.image_to_string(img)
 
             # You can also perform additional processing using PyTorch and other libraries here
