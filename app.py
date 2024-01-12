@@ -19,15 +19,13 @@ class OCR(Resource):
         file = request.files['file']
         text_response = ocr(file)
 
-        if text_response.status_code == 200:
-            response_data = text_response.get_json()
-            if "text" in response_data:
-                text = response_data["text"]
-                return jsonify({"text": text})
-            else:
-                return jsonify({"error": "Text not found in response"}), 500
-        else:
-            return jsonify({"error": text_response.data.decode('utf-8')}), text_response.status_code
+        return text_response
+        # if text_response.status_code == 200:
+        #     if "text" in response_data:
+        #     else:
+        #         return jsonify({"error": "Text not found in response"}), 500
+        # else:
+        #     return jsonify({"error": text_response.data.decode('utf-8')}), text_response.status_code
 
 class Translator(Resource):
     def get(self):

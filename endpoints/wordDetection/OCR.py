@@ -25,6 +25,7 @@ def ocr(file):
             img = Image.open(image_path)
 
             # Perform OCR using pytesseract
+            pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
             text = pytesseract.image_to_string(img)
 
             # You can also perform additional processing using PyTorch and other libraries here
@@ -33,7 +34,7 @@ def ocr(file):
             # Clean up the temporary image
             os.remove(image_path)
 
-            return jsonify({"text": text})
+            return text
         except Exception as e:
             return jsonify({"error": str(e)}), 500
     else:
