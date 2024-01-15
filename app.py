@@ -11,7 +11,7 @@ cors = CORS(app, resources ={r'/*': {'origins': '*'}})
 
 
 class OCR(Resource):
-    def get(self):
+    def post(self):
         # Check if the request contains a file
         if 'file' not in request.files:
             return jsonify({"error": "No file part"}), 400
