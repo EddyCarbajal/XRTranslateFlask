@@ -27,7 +27,7 @@ def ocr(file):
             # Perform OCR using pytesseract
             pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
 
-            text = pytesseract.image_to_string(img, lang="chi_sim")
+            text = pytesseract.image_to_string(img)
 
             # You can also perform additional processing using PyTorch and other libraries here
             # For more advanced OCR, consider using a dedicated OCR library like Tesseract
