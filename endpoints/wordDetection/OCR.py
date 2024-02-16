@@ -29,8 +29,6 @@ def ocr(file):
 
             text = pytesseract.image_to_string(img, lang="chi_sim")
 
-            text = text.encode('ascii', errors='ignore').decode()
-
             # You can also perform additional processing using PyTorch and other libraries here
             # For more advanced OCR, consider using a dedicated OCR library like Tesseract
 
