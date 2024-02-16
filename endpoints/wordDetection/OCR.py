@@ -25,9 +25,12 @@ def ocr(file):
             img = Image.open(image_path)
 
             # Perform OCR using pytesseract
+            # for heroku
             pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
+            # for local
+            # pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\\tesseract'
 
-            text = pytesseract.image_to_string(img)
+            text = pytesseract.image_to_string(img,lang="chi_tra")
 
             # You can also perform additional processing using PyTorch and other libraries here
             # For more advanced OCR, consider using a dedicated OCR library like Tesseract
