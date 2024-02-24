@@ -30,7 +30,7 @@ def ocr(file):
             # for local
             # pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\\tesseract'
 
-            text = pytesseract.image_to_string(img,lang="chi_trad")
+            text = pytesseract.image_to_string(img,lang="chi_tra")
 
             # You can also perform additional processing using PyTorch and other libraries here
             # For more advanced OCR, consider using a dedicated OCR library like Tesseract
