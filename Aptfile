@@ -1,6 +1,7 @@
 tesseract-ocr
 tesseract-ocr-eng
-tesseract-ocr-all
+tesseract-ocr-chi_sim
+tesseract-ocr-chi_trad
 *libarchive13*
 libgl1 
 libsm6 
