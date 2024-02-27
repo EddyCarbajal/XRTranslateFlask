@@ -21,8 +21,7 @@ def get_block_text(block):
                 if type_of_break == vision.TextAnnotation.DetectedBreak.BreakType.SPACE:
                     block_text += ' '
                 elif type_of_break == vision.TextAnnotation.DetectedBreak.BreakType.LINE_BREAK:
-                    block_text += '\n'
-        block_text += '\n'
+                    block_text += ' '
 
     return block_text
 
