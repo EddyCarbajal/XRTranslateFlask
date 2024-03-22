@@ -28,7 +28,7 @@ class OCR(Resource):
 class Translator(Resource):
     def get(self):
 
-        translation = translate(request.args["phrase"], "en")
+        translation = translate(request.args["phrase"], request.args["language"])
 
         return translation
 
